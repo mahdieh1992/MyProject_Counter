@@ -10,7 +10,8 @@ class CountDown extends React.Component {
     constructor() {
         super()
         this.state = {
-            count: 10
+            count: 10,
+            title: 'This is test'
         }
     }
 
@@ -35,7 +36,7 @@ class CountDown extends React.Component {
 
         return (
             <div className='divMain'>
-                <Describe />
+                <Describe title={this.state.title} />
                 <div className='div'>{this.state.count}</div>
 
             </div>
